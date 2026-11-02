@@ -1,0 +1,328 @@
+/* Shared color system for the staff workspace and patient portal. */
+:root{
+  --blue:#3277a5;
+  --blue-dark:#285e87;
+  --ink:#294555;
+  --muted:#667f8b;
+  --line:#afc3cd;
+  --bg:#e1eef8;
+  --soft:#d3e7f7;
+  --radius:17px;
+}
+html{background:#e1eef8}
+body{
+  min-height:100vh;
+  background:radial-gradient(ellipse at 100% 0,#c9e2f3 0,transparent 48%),linear-gradient(150deg,#eaf2f7,#e0ecf3);
+}
+.sidebar{
+  background:linear-gradient(165deg,#193e5b 0%,#204f70 60%,#1a435f 100%);
+  border-right-color:#193e5b;
+  scrollbar-color:#739eb9 #204d6b;
+  box-shadow:4px 0 20px #173c5410;
+}
+.sidebar .brand-name{color:#f4f8fc}
+.sidebar .brand-clinic{color:#b3d9ed}
+.sidebar .brand small{color:#a2c3d7}
+.sidebar .brand-mark{
+  background:linear-gradient(145deg,#3b86ad,#307293);
+  border:1px solid #6faccb;
+  color:#f1fbff;
+}
+.sidebar .nav-label{color:#93b7cf}
+.sidebar .nav-item{color:#cbdde3}
+.sidebar .nav-item:hover{background:#ffffff10;color:#fff}
+.sidebar .nav-item.active{
+  background:linear-gradient(100deg,#327eac,#2d6d96);
+  color:#fff;
+  box-shadow:inset 3px 0 #8cdddf,0 3px 10px #102f4520;
+}
+.sidebar .nav-item .count{background:#3a6b8d;color:#eaf6ff}
+.sidebar .nav-item.active .count{background:#ffffff24;color:#fff}
+.sidebar .clinic-card{background:#ffffff09;border-color:#527d99}
+.sidebar .clinic-card strong{color:#d6e8f3}
+.sidebar .clinic-card p{color:#a9c8dc}
+.sidebar .clinic-card .dot{background:#81d7b4;box-shadow:0 0 0 3px #81d7b412}
+.sidebar .side-foot{border-color:#446e8a}
+.sidebar .side-foot [data-action="logout"]{color:#b9d1e1}
+.topbar{
+  background:linear-gradient(100deg,#f6fafc,#e9f3f9);
+  border-top:3px solid #4e9bbf;
+  border-bottom-color:#a8c4d6;
+  box-shadow:0 2px 10px #284e6905;
+}
+.top-profile .avatar{background:#dce9ed;color:#2b668f;border:1px solid #b9d3e3}
+.icon-btn{color:#567e99}
+.icon-btn:hover{background:#d9ebf6;color:#195b89}
+.notification-count{background:#cc4c51;border-color:#edf6fb}
+.page-heading h1{color:#2c5064}
+.page-heading p{color:#5d7d94}
+.panel,.service-card,.dentist-card{
+  background:#f6faff;
+  border-color:#afc5cf;
+  box-shadow:0 5px 18px #214e6c09;
+}
+.panel-heading{
+  background:linear-gradient(105deg,#dcecf6,#edf5f9);
+  border-bottom-color:#b8d0df;
+  box-shadow:inset 3px 0 #5c9fc1;
+}
+.panel-title{color:#365d6f}
+.panel-subtitle{color:#56778e}
+.stats .stat{
+  border-color:#abc5d7;
+  box-shadow:0 4px 13px #29536f0a;
+}
+.stats .stat:first-child{
+  background:linear-gradient(130deg,#315f7d,#39768a);
+  border-color:#37657d;
+  border-top-color:#a0cbd2;
+  color:#fff;
+}
+.stats .stat:first-child .stat-top,.stats .stat:first-child .stat-caption{color:#d4e9f6}
+.stats .stat:first-child .stat-icon{background:#ffffff20;color:#e0f6ff}
+.stats .stat:nth-child(2){background:linear-gradient(135deg,#f7f1e2,#ede4ce);border-top-color:#b89b56}
+.stats .stat:nth-child(3){background:linear-gradient(135deg,#e6f0e9,#d6e5dc);border-top-color:#6b9b85}
+.stats .stat:nth-child(4){background:linear-gradient(135deg,#e9edf5,#dde4ef);border-top-color:#8b99b8}
+.stats .stat:nth-child(5){background:linear-gradient(135deg,#f5eae6,#eddbd6);border-top-color:#be918b}
+.stats .stat:not(:first-child) .stat-top,.stats .stat:not(:first-child) .stat-caption{color:#536d81}
+.stat-icon{background:#d6eaf5;color:#28739d}
+.stat-icon.green{background:#c5e2d3;color:#287853}
+.stat-icon.amber{background:#eddaa5;color:#8d6815}
+.stat-icon.purple{background:#d6dff2;color:#657baa}
+.stat-icon.red{background:#edccc8;color:#a75955}
+.button{background:#eaf3f9;border-color:#99b9cf;color:#2c6389}
+.button:hover{background:#d8eaf5;border-color:#6f9fbd}
+.button.primary{
+  background:linear-gradient(110deg,#286d9d,#288bb2);
+  border-color:#28759f;
+  color:#fff;
+  box-shadow:0 3px 9px #286d9d20;
+}
+.button.primary:hover{background:linear-gradient(110deg,#215d88,#20799f);border-color:#215d88}
+.button.danger{background:#f7e6e4;border-color:#d7aaa7;color:#a14c4d}
+.text-link{color:#236f9d}
+.tabs{background:#eaf3f9;border-color:#b0cbdc}
+.tab.active{color:#1a6595;border-color:#2b80ac}
+.tab.active span{background:#c2e0f2;color:#245b82}
+thead{background:#e0ecf0;color:#365f7f}
+tbody tr:nth-child(even){background:#edf5fa}
+tbody tr:hover{background:#e4eef0}
+.table-footer{background:#e8f2f8;border-color:#b2ccdd;color:#52768f}
+.search,.filter-select{background:#f9fcfe;border-color:#a1bfd3}
+.badge-status{background:#f6e7bb;color:#866018}
+.badge-status.approved{background:#dbe9df;color:#366951}
+.badge-status.completed{background:#e2e8f1;color:#50657f}
+.badge-status.cancelled{background:#eddcda;color:#975b5b}
+.patient-banner,.soft-banner{
+  background:radial-gradient(circle at 95% 0,#5bb5cb50 0,transparent 44%),linear-gradient(115deg,#305b70,#417d88);
+  border-color:#387da2;
+  color:#f0f8fd;
+  box-shadow:0 6px 20px #24577714;
+}
+.patient-banner .eyebrow{color:#9fdfed}
+.patient-banner h2,.soft-banner h3{color:#f3faff}
+.patient-banner p,.soft-banner p{color:#d0e5f0}
+.patient-banner>.icon,.soft-banner>.icon{color:#99d9e8}
+.soft-banner .text-link{color:#c0f1f6}
+.calendar-head{background:#f3f7f8;padding-top:14px}
+.calendar-grid{background:linear-gradient(#f3f7f8,#fafcfa)}
+.day.selected{background:#2c7aa7;box-shadow:0 3px 8px #2c7aa729;color:#fff}
+.day.today:not(.selected){background:#d3e8f5;color:#1b628e}
+.calendar-legend{background:#e3f0f7;border-color:#b6cedd;color:#426c87}
+.activity-symbol{background:#d5eaf5;color:#3280aa}
+.schedule-detail{border-color:#4d9db8}
+.activity small,.dentist-caption{color:#5d7c92}
+.followup-card{border-color:#bfd4df;background:linear-gradient(100deg,#edf6fa,#fafcfa)}
+.followup-card .stat-icon{background:#cde7ed;color:#2c7c91}
+.reschedule-card:nth-of-type(even){background:#eff6fa}
+.request-status{background:#f2e3b9;color:#86631f}
+.request-status.accepted{background:#cce6d9;color:#2c7353}
+.service-card{border-top:4px solid #5297bc;background:linear-gradient(155deg,#e4eef0,#f8fbfd 65%)}
+.service-card:nth-child(3n+2){border-top-color:#549c9f;background:linear-gradient(155deg,#e0f0ed,#f8fbfd 65%)}
+.service-card:nth-child(3n){border-top-color:#7a94bd;background:linear-gradient(155deg,#e7ecf8,#f8fbfd 65%)}
+.service-card h3{color:#285778}
+.service-card .service-meta strong{color:#246d98}
+.dentist-card{border-top-color:#4d98bd;background:linear-gradient(150deg,#e3edf0 0,#fafcfa 58%)}
+.dentist-card:nth-child(2){border-top-color:#5b9fa2;background:linear-gradient(150deg,#e1eeeb 0,#fafcfa 58%)}
+.dentist-card:nth-child(3){border-top-color:#7c98bf;background:linear-gradient(150deg,#e8ecf3 0,#fafcfa 58%)}
+.dentist-card:nth-child(4){border-top-color:#8f9ab3;background:linear-gradient(150deg,#ececf2 0,#fafcfa 58%)}
+.dentist-avatar{box-shadow:0 4px 12px #315f7c12}
+.form-control,.form-select{background-color:#f3f8fc;border-color:#9fbed2}
+.form-control:focus,.form-select:focus{background-color:#fafdff;border-color:#5c9bc1;box-shadow:0 0 0 3px #367fa318}
+.info-box{background:#e4eef0;border-color:#adcbdc;color:#396784}
+.app-modal{background:#f8fbfd;border-color:#8eafc5}
+.modal-heading,.modal-footer-custom{background:linear-gradient(100deg,#deedf7,#ecf5fa);border-color:#aec9dc}
+.slot{background:#eaf3f9;border-color:#b1cbdc;color:#3a6b8d}
+.slot.selected{background:#2c79a5;color:white;border-color:#2c79a5}
+.notification-panel{background:#f8fbfd;border-color:#91b5cc}
+.notification-panel .unread{background:#dfeff9;box-shadow:inset 3px 0 #499dc2}
+.week-day{background:#e8f2f9;color:#517992}
+.week-day.today{background:#d2e8f6;color:#245e85}
+.week-event{background:#e3f0f8;border-color:#b6d1e1;border-left-color:#4e98be}
+.page-num{background:#cee5f3;color:#246289}
+.footer{color:#54758e}
+.account-control{position:relative;z-index:70}
+.top-profile[aria-expanded="true"]{color:#1e628c}
+.top-profile>.icon{transition:transform .18s}
+.top-profile[aria-expanded="true"]>.icon{transform:rotate(180deg)}
+.account-dropdown{
+  position:absolute;right:0;top:calc(100% + 16px);width:248px;max-width:calc(100vw - 28px);
+  padding:6px;background:#f8fbfd;border:1px solid #9dbdd2;border-radius:12px;
+  box-shadow:0 14px 36px #244d6e24;
+}
+.account-dropdown[hidden]{display:none}
+.account-dropdown-summary{padding:12px 12px 14px;margin-bottom:5px;border-bottom:1px solid #d0e0eb}
+.account-dropdown-summary strong{display:block;font-size:12px;color:#2c5270}
+.account-dropdown-summary small{display:block;font-size:11px;color:#69869a;margin-top:5px;overflow-wrap:anywhere}
+.account-dropdown-item{display:flex;align-items:center;gap:12px;width:100%;padding:12px;border:0;border-radius:7px;background:transparent;text-align:left;color:#355f7f;font-size:12px}
+.account-dropdown-item .icon{width:18px;height:18px;color:#4e85a7}
+.account-dropdown-item small{display:block;font-size:10px;color:#6a879d;margin-top:4px}
+.account-dropdown-item:hover,.account-dropdown-item:focus-visible{background:#e0edf7}
+.account-dropdown-item.logout-item{color:#a45557;border-top:1px solid #dce6ee;border-radius:0 0 6px 6px;margin-top:4px}
+.account-dropdown-item.logout-item .icon{color:#a96a6b}
+.account-dropdown-item.logout-item:hover{background:#f6e9e9}
+@media(max-width:760px){.top-profile>.icon{display:block;width:15px;height:15px}.account-dropdown{top:calc(100% + 14px)}}
+.password-field{position:relative}
+.password-field .form-control{padding-right:48px}
+.login-form .password-toggle{
+  position:absolute;right:5px;top:50%;transform:translateY(-50%);
+  display:grid;place-items:center;width:36px;height:36px;padding:7px;
+  border:0;border-radius:6px;background:transparent;color:#4d7c9b;
+}
+.login-form .password-toggle:hover{background:#deedf7;color:#205d85}
+.login-form .password-toggle .icon{width:20px;height:20px}
+
+/* Modern refinements, retaining the clinic's navy and light-blue palette. */
+body{background:radial-gradient(ellipse at 100% 0,#c6e2f6 0,transparent 48%),linear-gradient(150deg,#eaf3fb,#daeaf6)}
+.sidebar{background:linear-gradient(165deg,#203c4e,#2b5266 65%,#244959)}
+.sidebar .nav-item{min-height:45px;border-radius:11px;font-size:13px;transition:background .16s,color .16s}
+.sidebar .nav-item.active{background:linear-gradient(105deg,#3c728b,#426f86);box-shadow:inset 3px 0 #a0d2cc,0 4px 12px #102f4515}
+.sidebar .brand-mark{border-radius:13px}
+.sidebar .clinic-card{border-radius:13px;background:#ffffff0a}
+.nav-label{font-size:9px;letter-spacing:1.8px}
+.topbar{border-top:0;background:linear-gradient(105deg,#f7fbff,#e9f4fd);box-shadow:0 3px 15px #234d6906}
+.breadcrumb{font-size:12px}
+.top-profile{border-left:0;border-radius:11px;padding:6px 9px;gap:10px}
+.top-profile:hover,.top-profile[aria-expanded="true"]{background:#e4eef0}
+.top-profile .avatar{width:37px;height:37px}
+.page-heading{margin-bottom:28px}
+.page-heading h1{font-size:30px;font-weight:650;letter-spacing:-1px;line-height:1.25}
+.page-heading p{font-size:13px;line-height:1.7}
+.panel,.service-card,.dentist-card{border-radius:var(--radius);border-color:#96b9d3;box-shadow:0 6px 22px #234d6908,0 1px 3px #234d6905}
+.panel-heading{padding:22px 23px;background:linear-gradient(110deg,#d3e7f7,#e6f2fc);box-shadow:none;border-bottom-color:#c0d1d8}
+.panel-title{font-size:15px;font-weight:650;letter-spacing:-.2px}
+.panel-subtitle{font-size:11px;line-height:1.6;margin-top:6px}
+.stats{gap:17px}
+.stats .stat{border-radius:15px;border-top-width:2px;padding:20px;box-shadow:0 5px 16px #284e6908}
+.stat-top{font-size:12px;line-height:1.5}
+.stat-number{font-size:32px;font-weight:650;letter-spacing:-1px;margin:7px 0 1px}
+.stat-caption{font-size:11px;line-height:1.5}
+.stat-icon{border-radius:10px;width:35px;height:35px}
+.button{border-radius:10px;min-height:40px;font-size:12px;padding:10px 16px;transition:background .16s,box-shadow .16s,border-color .16s}
+.button.primary{background:linear-gradient(110deg,#2e6e9d,#2c739b);box-shadow:0 4px 10px #2679a51a}
+.button.primary:hover{background:linear-gradient(110deg,#265d86,#286587);box-shadow:0 5px 14px #2679a528}
+.icon-btn{border-radius:8px}
+.search{border-radius:10px;max-width:285px;background:#f8fcff}
+.search input{font-size:12px}
+.filter-select{border-radius:9px;font-size:12px;max-width:185px;background:#f8fcff}
+.form-control,.form-select{border-radius:10px;min-height:43px}
+.tabs{gap:7px;padding:10px 17px;overflow-x:auto;scrollbar-width:thin;background:#e6f1fa;border-color:#c0d5e3}
+.tab{border:0;border-radius:8px;padding:8px 12px;font-size:12px;transition:background .16s}
+.tab:hover{background:#e1edf6}
+.tab.active{background:#dae9ee;color:#315e75;font-weight:650;box-shadow:inset 0 0 0 1px #b8cfd9}
+thead{background:#e1eef7}
+th{font-size:11px;font-weight:600;padding:14px 20px;color:#456e8c}
+td{font-size:12px;line-height:1.6;padding:16px 20px}
+tbody tr:nth-child(even){background:#e9f3fb}
+tbody tr:hover{background:#e2f1fc}
+.service-text,.person strong{font-size:12px}
+.person small,.dentist-caption{font-size:10px;line-height:1.5}
+.person .avatar{width:35px;height:35px;font-size:11px}
+.badge-status{border-radius:20px;font-size:10px;padding:5px 9px;white-space:nowrap}
+.table-footer{font-size:11px;padding:15px 21px;background:#eff5f5}
+.patient-banner,.soft-banner{border-radius:18px;background:radial-gradient(ellipse at 100% 0,#8bbdb640 0,transparent 50%),linear-gradient(115deg,#305b70,#417d88);box-shadow:0 7px 22px #24577716}
+.patient-banner{padding:30px}
+.patient-banner h2{font-size:24px;letter-spacing:-.5px}
+.patient-banner p,.soft-banner p{font-size:12px;line-height:1.85}
+.activity-symbol{width:31px;height:31px;border-radius:10px}
+.activity p{font-size:11px}
+.dist-row{font-size:11px;padding:8px 0}
+.distribution-bar{height:10px;border-radius:8px}
+.calendar-head strong{font-size:13px}
+.day{border-radius:9px;font-size:11px;height:35px}
+.schedule-detail strong{font-size:12px}
+.schedule-detail p{font-size:10px;line-height:1.7}
+.schedule-time{font-size:11px}
+.service-card,.dentist-card{padding:27px;border-top-width:3px}
+.service-card h3{font-size:18px;letter-spacing:-.3px}
+.service-card p,.dentist-card p{font-size:13px;line-height:1.85}
+.dentist-card h2{font-size:23px;letter-spacing:-.35px}
+.dentist-specialty{font-size:13px}
+.availability{border-radius:20px;padding:6px 10px;font-size:11px}
+.followup-card{padding:25px;gap:18px}
+.followup-card h3{font-size:15px;letter-spacing:-.2px}
+.followup-card p{font-size:12px;line-height:1.9}
+.followup-card .detail-actions{gap:9px;margin-top:18px}
+.followup-card .detail-actions .button{margin-left:0}
+.info-box{border-radius:11px;line-height:1.85}
+.app-modal{border-radius:20px;box-shadow:0 24px 80px #193c6038}
+.modal-heading{padding:23px 26px}
+.modal-heading h2{font-size:20px;letter-spacing:-.5px}
+.slot{border-radius:9px;min-height:36px}
+.account-dropdown,.notification-panel{border-radius:15px;box-shadow:0 14px 38px #244d6e20}
+.account-dropdown-item{border-radius:9px}
+.account-dropdown-item.logout-item{border-radius:0 0 9px 9px}
+.login-form-wrap{background:linear-gradient(145deg,#edf5fa,#e8f0f1)}
+.login-form{width:410px;padding:31px;border:1px solid #b3c8d1;border-radius:22px;background:#f8fbfd;box-shadow:0 16px 40px #244d6e0d}
+.login-form h2{font-size:29px;letter-spacing:-.9px}
+.demo-actions .button{font-size:11px;padding:10px}
+@media(max-width:1200px){.stats{gap:11px}.stats .stat{padding:17px 13px}.stat-top{font-size:11px}.stat-icon{width:29px;height:29px}.stat-number{font-size:29px}.stat-caption{font-size:10px}}
+@media(max-width:760px){
+  .page-heading{gap:12px;margin-bottom:23px}.page-heading h1{font-size:25px;letter-spacing:-.65px}.page-heading p{font-size:12px}
+  .stats{gap:11px}.stats .stat{padding:17px}.stat-top{font-size:11px}.stat-number{font-size:29px}
+  .panel-heading{padding:18px}.panel-title{font-size:14px}.panel-subtitle{font-size:10px}
+  .heading-actions .button{padding:9px 11px;min-height:38px}.tabs{padding:10px 13px;gap:5px}.tab{font-size:11px;padding:8px 10px}
+  .top-profile{padding:5px}.patient-banner{padding:23px}.patient-banner h2{font-size:20px}
+  .dentist-card,.service-card{padding:23px}.followup-card{padding:20px}.followup-card .detail-actions .button{margin-left:0}
+  .login-form{width:100%;padding:25px;max-width:410px;border-radius:18px}.login-form-wrap{padding:30px 20px}
+}
+@media(max-width:440px){.page-heading h1{font-size:23px}.page-heading .button{font-size:10px;padding:9px}.panel-subtitle{max-width:245px}.login-form{padding:23px}}
+.profile-avatar{overflow:hidden;flex-shrink:0}
+.profile-avatar img{width:100%;height:100%;object-fit:cover;display:block}
+.account-dropdown-summary{display:flex;align-items:center;gap:10px}
+.account-dropdown-summary>div{min-width:0}
+.account-dropdown-summary .profile-avatar{width:37px;height:37px;background:#dce9ed;color:#2b668f}
+.profile-photo-editor{display:flex;align-items:center;gap:21px;padding:23px 0;margin:15px 0 24px;border-top:1px solid #c9dce8;border-bottom:1px solid #c9dce8}
+.profile-photo-editor .profile-avatar{width:86px;height:86px;font-size:25px;border:2px solid #aecbd3;box-shadow:0 3px 13px #27587912;background:#e0ecef;color:#396d90}
+.profile-photo-editor h4{font-size:14px;margin:0 0 7px;color:#355f7d;font-weight:600}
+.profile-photo-editor p{font-size:11px;margin:0 0 12px;line-height:1.7}
+.profile-photo-actions{display:flex;gap:9px;flex-wrap:wrap}
+.profile-photo-actions [hidden]{display:none}
+#profile-photo-status{display:block;font-size:11px;margin-top:8px;color:#337856}
+@media(max-width:440px){.profile-photo-editor{align-items:flex-start;gap:15px;flex-wrap:wrap}.profile-photo-editor .profile-avatar{width:72px;height:72px}.profile-photo-actions .button{font-size:11px;padding:9px 12px}}
+
+/* Light-blue surfaces with navy text and clear, contrasting controls. */
+.sidebar{background:linear-gradient(165deg,#c8e0f3,#b8d5eb 65%,#accae2);border-right-color:#89adc8;scrollbar-color:#82aac8 #c9dfef}
+.sidebar .brand-name{color:#284f70}
+.sidebar .brand-clinic{color:#476f8f}
+.sidebar .brand small{color:#597b94}
+.sidebar .nav-label{color:#5e809b}
+.sidebar .nav-item{color:#3d6586}
+.sidebar .nav-item:hover{background:#e6f2fc;color:#245f89}
+.sidebar .nav-item.active{background:linear-gradient(105deg,#306c94,#3b7b9d);color:#fff;box-shadow:inset 3px 0 #a6d9f3,0 4px 12px #102f4510}
+.sidebar .nav-item .count{background:#bcd9ef;color:#315e80}
+.sidebar .nav-item.active .count{background:#ffffff24;color:#fff}
+.sidebar .clinic-card{background:#edf7fd;border-color:#a2c3da}
+.sidebar .clinic-card strong{color:#385f7d}
+.sidebar .clinic-card p{color:#587c96}
+.sidebar .side-foot{border-color:#a7c7de}
+.sidebar .side-foot [data-action="logout"]{color:#466b87}
+.stats .stat:first-child{background:linear-gradient(130deg,#cde6f8,#b6d8ee);border-color:#9fc3de;border-top-color:#77aed3;color:#244d6b}
+.stats .stat:first-child .stat-top,.stats .stat:first-child .stat-caption{color:#446c89}
+.stats .stat:first-child .stat-icon{background:#aacee8;color:#346888}
+.patient-banner,.soft-banner{background:radial-gradient(ellipse at 100% 0,#ffffff70 0,transparent 50%),linear-gradient(115deg,#c1e0f5,#a7cee9);border-color:#91bad6;color:#244e70}
+.patient-banner .eyebrow{color:#40789d}
+.patient-banner h2,.soft-banner h3{color:#244e70}
+.patient-banner p,.soft-banner p{color:#416c8c}
+.patient-banner>.icon,.soft-banner>.icon{color:#5c97be}
+.soft-banner .text-link{color:#2c628d}
